@@ -1,4 +1,3 @@
-
 Introducing Android
 -------------------
 
@@ -82,7 +81,7 @@ Android Open Source Project{empty}footnote:[http://source.android.com].
 
 [[fig.android_architecture]]
 .Overview of the Android platform's architecture
-image::attachments/android_architecture.svg[scaledwidth="50%",align="center"]
+image::attachments/android_architecture.svg
 
 .How open is Android?
 ********************************************************************************
