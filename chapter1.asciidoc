@@ -1,5 +1,4 @@
-Introducing Android
--------------------
+== Introducing Android
 
 In order to write applications for Android, it helps to understand more about
 the platform as a whole.  It is not necessary to know intimately the details
@@ -17,13 +16,12 @@ common to refer to Android as a mobile operating system that competes with
 other platforms such as Apple's iOS, Nokia's Symbian, or Research in Motion's
 Blackberry.  The developer documentation defines Android as `a software stack
 for mobile devices that includes an operating system, middleware and key
-applications'footnote:[http://developer.android.com/guide/basics/what-is-android.html].
+applications (see [http://developer.android.com/guide/basics/what-is-android.html]).
 In the next section, you will learn in greater detail what this means.
 
 
 .A brief history of Android
-[NOTE]
-********************************************************************************
+****
 Android was created by Andy Rubin and started out as Android, Inc. in 2003.
 Google acquired the company in 2005 and made Rubin its Senior Vice President
 of Mobile.  Google developed Android secretly for a couple of years, and in
@@ -51,9 +49,7 @@ The growth of Android's market share has been remarkable.  It's share has
 grown from 3.8% in November 2009 to being the leader at 36.4% in April 2011.
 In June 2011, Google claimed that 500,000 new Android devices were being
 activated each day.
-********************************************************************************
-
-
+****
 
 === Anatomy of an Android
 
@@ -85,7 +81,7 @@ Android Open Source Project{empty}footnote:[http://source.android.com].
 image::attachments/android_architecture.svg[]
 
 .How open is Android?
-********************************************************************************
+****
 One of the biggest selling points of Android is that is an open source
 project.  Google publishes the full source code to the platform under the
 Apache Software License 2.0, a permissive license that is friendly to
@@ -99,7 +95,7 @@ not release the full source code of the Honeycomb release for tablet
 computers, which garnered much criticism from open source software advocates.
 Google plans to continue its practice of releasing the full platform source
 code with the next release, Ice Cream Sandwich.
-********************************************************************************
+****
 
 ==== The Linux Kernel
 
@@ -124,7 +120,6 @@ Android has also includes a number of modifications to the Linux kernel to
 tailor it to the platform as a whole.  Some of these modifications include a
 specialised shared memory mechanism, a lightweight inter-process communication
 protocol, and an enhanced power management subsystem.
-
 
 ==== System libraries
 
@@ -179,7 +174,7 @@ Hardware abstraction layer::
   
 
 .Is Android Linux?
-********************************************************************************
+*****
 Android makes use of the Linux kernel and many of the same system libraries
 found on Linux distributions such as Debian, Fedora, Gentoo, or Ubuntu.
 Nonetheless, there are some key differences that keep Android from fully being
@@ -191,7 +186,7 @@ smaller uClibc C library and BusyBox as a lean replacement for many of the
 standard utilities.  However, Android uses its own Bionic C library and
 Toolbox utility suite, neither of which support all of the features necessary
 for a general-purpose Linux system.
-********************************************************************************
+****
 
 ==== Android runtime
 
@@ -203,7 +198,7 @@ application will run in an instance of the runtime and you must compile your
 code to a format that is compatible with the Dalvik VM.
 
 .What is a virtual machine?
-********************************************************************************
+****
 Most programming languages that are compiled into a machine-readable form are
 compiled into a form that is specific to a particular type of platform.  This
 provides very good performance but also means that it cannot run on different
@@ -219,7 +214,7 @@ programs are compiled for the Java VM, which has been implemented for a wide
 range of computers.  Other languages also use a virtual machine.  For example,
 in Microsoft's .NET framework, languages such as C# and VB.NET compile into
 Common Intermediate Language, which is executed by a virtual machine.
-********************************************************************************
+*****
 
 ===== The Dalvik VM
 
@@ -251,8 +246,8 @@ the original.
 
 [[fig.dx_process]]
 .From source to DEX file
-image::attachments/dx_process.svg[scaledwidth="80%",align="center"]
 
+image::attachments/dx_process.svg[scaledwidth="80%",align="center"]
 
 ===== The core libraries
 
