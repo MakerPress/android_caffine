@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="600"
+   height="560"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.1 r9760"
+   sodipodi:docname="android_architecture.svg">
+  <defs
+     id="defs4">
+    <filter
+       id="filter3031"
+       inkscape:label="Button highlight"
+       inkscape:menu="Bevels"
+       inkscape:menu-tooltip="Basic specular bevel to use for building textures"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur3033"
+         stdDeviation="10"
+         in="SourceGraphic"
+         result="result0" />
+      <feDiffuseLighting
+         id="feDiffuseLighting3035"
+         lighting-color="#ffffff"
+         diffuseConstant="1"
+         surfaceScale="4"
+         result="result5">
+        <feDistantLight
+           id="feDistantLight3037"
+           elevation="45"
+           azimuth="270" />
+      </feDiffuseLighting>
+      <feComposite
+         id="feComposite3039"
+         in2="SourceGraphic"
+         k1="1.4"
+         in="result5"
+         result="fbSourceGraphic"
+         operator="arithmetic"
+         k2="0"
+         k3="0"
+         k4="0" />
+      <feGaussianBlur
+         id="feGaussianBlur3041"
+         result="result0"
+         in="fbSourceGraphic"
+         stdDeviation="6" />
+      <feSpecularLighting
+         id="feSpecularLighting3043"
+         specularExponent="25"
+         specularConstant="1"
+         surfaceScale="4"
+         lighting-color="#ffffff"
+         result="result1"
+         in="result0">
+        <feDistantLight
+           id="feDistantLight3045"
+           azimuth="270"
+           elevation="10" />
+      </feSpecularLighting>
+      <feComposite
+         id="feComposite3047"
+         in2="result1"
+         k3="1"
+         k2="1"
+         operator="arithmetic"
+         result="result4"
+         in="fbSourceGraphic"
+         k1="0"
+         k4="0" />
+      <feComposite
+         id="feComposite3049"
+         in2="SourceGraphic"
+         operator="in"
+         result="result2"
+         in="result4" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.2810975"
+     inkscape:cx="440.49398"
+     inkscape:cy="339.8715"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1394"
+     inkscape:window-height="1022"
+     inkscape:window-x="1280"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-492.36218)">
+    <rect
+       style="fill:#00c000;fill-opacity:1;stroke:none;filter:url(#filter3031)"
+       id="rect2985"
+       width="600"
+       height="100"
+       x="0"
+       y="952.36218"
+       rx="40"
+       ry="40" />
+    <text
+       xml:space="preserve"
+       style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:150%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="299.86328"
+       y="1017.2743"
+       id="text3755"
+       sodipodi:linespacing="150%"><tspan
+         sodipodi:role="line"
+         id="tspan3757"
+         x="299.86328"
+         y="1017.2743"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;font-family:Sans;-inkscape-font-specification:Sans Bold">Linux kernel</tspan></text>
+    <path
+       style="fill:#00bec0;fill-opacity:1;stroke:none;filter:url(#filter3031)"
+       d="m 40,712.36209 c -22.16,-2e-5 -40,17.84 -40,40 l 0,150.00009 c 0,22.16 17.84,40 40,40 l 520,0 c 22.16,0 40,-7.83982 40,-29.99982 0,0 6.09476,-30 -40,-30 l -225,0 c -22.16,0 -40,-17.84 -40,-40 l 0,-90.00009 c 0,-18.85618 -21.14382,-39.99998 -40,-40 z"
+       id="rect3784"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ssssssssssss" />
+    <rect
+       style="fill:#0500c0;fill-opacity:1;stroke:none;filter:url(#filter3031)"
+       id="rect3832"
+       width="295"
+       height="160"
+       x="305"
+       y="712.34937"
+       rx="40"
+       ry="40" />
+    <text
+       xml:space="preserve"
+       style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:150%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="143.36595"
+       y="776.55835"
+       id="text3755-6"
+       sodipodi:linespacing="150%"><tspan
+         sodipodi:role="line"
+         x="143.36595"
+         y="776.55835"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;font-family:Sans;-inkscape-font-specification:Sans Bold"
+         id="tspan3858">System</tspan><tspan
+         sodipodi:role="line"
+         x="143.36595"
+         y="836.55835"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;font-family:Sans;-inkscape-font-specification:Sans Bold"
+         id="tspan4058">libraries</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:150%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="451.62109"
+       y="777.26147"
+       id="text3755-6-4"
+       sodipodi:linespacing="150%"><tspan
+         sodipodi:role="line"
+         x="451.62109"
+         y="777.26147"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;font-family:Sans;-inkscape-font-specification:Sans Bold"
+         id="tspan3858-4">Android</tspan><tspan
+         sodipodi:role="line"
+         x="451.62109"
+         y="837.26147"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;font-family:Sans;-inkscape-font-specification:Sans Bold"
+         id="tspan4058-3">runtime</tspan></text>
+    <rect
+       style="fill:#c000be;fill-opacity:1;stroke:none;filter:url(#filter3031)"
+       id="rect2985-0"
+       width="600"
+       height="100"
+       x="0"
+       y="602.36218"
+       rx="40"
+       ry="40" />
+    <text
+       xml:space="preserve"
+       style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:150%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="299.54102"
+       y="663.39734"
+       id="text3755-7"
+       sodipodi:linespacing="150%"><tspan
+         sodipodi:role="line"
+         id="tspan3757-8"
+         x="299.54102"
+         y="663.39734"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;font-family:Sans;-inkscape-font-specification:Sans Bold">Application framework</tspan></text>
+    <rect
+       style="fill:#c00000;fill-opacity:1;stroke:none;filter:url(#filter3031)"
+       id="rect2985-0-6"
+       width="600"
+       height="100"
+       x="0"
+       y="492.36218"
+       rx="40"
+       ry="40" />
+    <text
+       xml:space="preserve"
+       style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:150%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="299.54099"
+       y="553.39734"
+       id="text3755-7-8"
+       sodipodi:linespacing="150%"><tspan
+         sodipodi:role="line"
+         id="tspan3757-8-8"
+         x="299.54099"
+         y="553.39734"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;font-family:Sans;-inkscape-font-specification:Sans Bold">Applications</tspan></text>
+  </g>
+</svg>
