@@ -1,10 +1,3 @@
-Decaffeinated Android
-=====================
-Daniel Solano_G√≥mez
-:doctype: book
-:docinfo:
-:imagesdir: images/
-
 
 Introducing Android
 -------------------
@@ -89,7 +82,7 @@ Android Open Source Project{empty}footnote:[http://source.android.com].
 
 [[fig.android_architecture]]
 .Overview of the Android platform's architecture
-image::android_architecture.svg[scaledwidth="50%",align="center"]
+image::attachments/android_architecture.svg[scaledwidth="50%",align="center"]
 
 .How open is Android?
 ********************************************************************************
@@ -258,7 +251,7 @@ the original.
 
 [[fig.dx_process]]
 .From source to DEX file
-image::dx_process.svg[scaledwidth="80%",align="center"]
+image::attachments/dx_process.svg[scaledwidth="80%",align="center"]
 
 
 ===== The core libraries
