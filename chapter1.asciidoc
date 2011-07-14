@@ -1,0 +1,275 @@
+Decaffeinated Android
+=====================
+Daniel Solano_G√≥mez
+:doctype: book
+:docinfo:
+:imagesdir: images/
+
+
+Introducing Android
+-------------------
+
+In order to write applications for Android, it helps to understand more about
+the platform as a whole.  It is not necessary to know intimately the details
+of the Android platform, being familiar with the platform will help you
+understand many of the features you can use in your application, as well as
+some of the limitations you will face.
+
+If you are eager to get started, feel free to skim over this chapter and move
+on to <<android_apps, the next chapter>>.
+
+=== What is Android?
+
+What is _Android_?  Although the term is used in many contexts, it is most
+common to refer to Android as a mobile operating system that competes with
+other platforms such as Apple's iOS, Nokia's Symbian, or Research in Motion's
+Blackberry.  The developer documentation defines Android as `a software stack
+for mobile devices that includes an operating system, middleware and key
+applications'footnote:[http://developer.android.com/guide/basics/what-is-android.html].
+In the next section, you will learn in greater detail what this means.
+
+
+.A brief history of Android
+********************************************************************************
+(((Android, history)))
+Android was created by Andy Rubin and started out as Android, Inc. in 2003.
+Google acquired the company in 2005 and made Rubin its Senior Vice President
+of Mobile.  Google developed Android secretly for a couple of years, and in
+November 2007, Android was formally unveiled by the Open Handset Alliance, a
+consortium of software companies, mobile operators, chip manufacturers, and
+other companies.
+
+The first commercial handset using Android was the T-Mobile G1, released in
+October 2008, and it used Android 1.0.  It was upgraded to Android 1.1 in
+February 2009.  Subsequent releases of Android are commonly referred to by
+their nicknames, as follow:
+
+* _Cupcake_, version 1.5, released April 2009
+* _Donut_, version 1.6, released September 2009
+* _Eclair_, initially released in September 2009 as version 2.0, and then
+  later updated to version 2.0.1 in December 2009 and version 2.1 in January
+  2010
+* _Froyo_ (frozen yoghurt), version 2.2, released May 2010
+* _Gingerbread_, version 2.3, released in December 2010 and later updated to
+  2.3.3 in February 2011
+* _Honeycomb_, version 3.0, released February 2011 and updated to version 3.1
+  in May 2011
+
+The growth of Android's market share has been remarkable.  It's share has
+grown from 3.8% in November 2009 to being the leader at 36.4% in April 2011.
+In June 2011, Google claimed that 500,000 new Android devices were being
+activated each day.
+********************************************************************************
+
+
+
+=== Anatomy of an Android
+
+indextermstart:android_arch[Android,architecture]
+The Android platform is a massive collection of open source software programs
+and libraries.  This software is organised into five general groups layered as
+seen in <<fig.android_architecture>>.  From the bottom up, these are:
+
+. The _Linux kernel_ provides the fundamental functionality for the platform,
+  such as an abstraction of the hardware, the security mechanism, and a
+  networking stack.
+. The _system libraries_ are an assortment of open source libraries that
+  provide higher level functionality such as an embedded relational database,
+  a web page renderer, and a 3D graphics library
+. The _Android runtime_ is the basic container that runs all other Android
+  components, such as applications and background services. 
+. The _application framework_ consists of all the different programming
+  interfaces that are available to you as an application developer.
+. Finally, Android _applications_ are what users see and what you can develop.
+
+As an application developer, you will generally not need to worry about the
+lower layers.  However, if you were interesting in modifying the Android
+platform or porting it to a new device, all of the code is available from the
+Android Open Source Project{empty}footnote:[http://source.android.com].
+
+[[fig.android_architecture]]
+.Overview of the Android platform's architecture
+image::android_architecture.svg[scaledwidth="50%",align="center"]
+
+.How open is Android?
+********************************************************************************
+One of the biggest selling points of Android is that is an open source
+project.  Google publishes the full source code to the platform under the
+Apache Software License 2.0, a permissive license that is friendly to
+commercial development.  Google also provides a bug tracker and a process for
+accepting patches for third-party developers.
+
+However, unlike many other open source projects, Google generally develops new
+versions of the platform privately.  Google publishes a new version of the
+platform only once devices that use it start shipping.  However, Google did
+not release the full source code of the Honeycomb release for tablet
+computers, which garnered much criticism from open source software advocates.
+Google plans to continue its practice of releasing the full platform source
+code with the next release, Ice Cream Sandwich.
+********************************************************************************
+
+==== The Linux Kernel
+
+A kernel is the core of a computer operating system and provides many of the
+most basic resources needed by programs running on the computer, such as
+managing memory and processes.  The Linux kernel was developed by Linus
+Trovalds in 1991 and has since grown to be one of the most ubiquitous kernels
+in use today.  It is found on most of the world's most powerful supercomputers
+and runs much of the Internet.  The Linux kernel also scales down to small
+devices such as wireless routers, e-book readers, and even smart phones from
+Android's competitors.
+
+In addition to the most basic functions, the Linux kernel also provides a
+robust permission-based security model, a networking stack, file system
+support, and support for shared libraries.  In order to support specific
+hardware, manufacturers write drivers that are compiled into the kernel and
+abide by standard interfaces.  This allows the rest of the platform to be
+written without needing to know the specific details of the hardware on which
+it is running.
+
+Android has also includes a number of modifications to the Linux kernel to
+tailor it to the platform as a whole.  Some of these modifications include a
+specialised shared memory mechanism, a lightweight inter-process communication
+protocol, and an enhanced power management subsystem.
+
+
+==== System libraries
+
+The next level up from the kernel is made up of the various system libraries
+included in the platform and written in either C or C\++.  Many of these
+libraries come from other open source projects and are commonly included in
+Linux distributions, and others were created especially for Android.  Some of
+these libraries include:
+
+Bionic::
+  Bionic is a C library derived from the C libraries from various Berkeley
+  Software Distribution (BSD) distributions.  It is tuned for embedded
+  systems by being particularly small and efficient.  It also supports some of
+  Android's unique features, but neither adheres fully to the POSIX standard
+  nor is compatible with all of the GNU C library extensions.
+
+WebKit::
+  Android includes WebKit, a popular layout engine that is also used browsers
+  such as Chrome and Safari.  It fully supports the latest HTML, CSS, and
+  JavaScript standards.  Like many other components, Android's WebKit
+  implementation is tweaked for the platform.
+
+SQLite::
+  Android supports SQLite, an extremely popular and lightweight relational
+  database management system.  Available to all applications, it allows
+  data to stored in a relational database and queried using SQL.
+
+Media libraries::
+  Android supports large number of media capabilities, such as displaying
+  images, playing audio or video, and taking pictures or recording video from
+  the camera.  The media libraries do the heavy lifting to make all of this
+  possible.
+
+Surface manager::
+  Android applications can support both 2D and 3D user interfaces, and several
+  applications may run at the same time.  The surface manager is in charge of
+  composing all of these different interfaces and displaying the result to the
+  user.
+
+Audio flinger::
+  What the surface manager is to the display, the audio flinger is to the
+  audio outputs.  The audio flinger not only mixes the audio from the
+  different possible sources, such as the telephone or a media player, but is
+  also in charge of making sure the audio is played via the right device, such
+  as the built-in speaker or a Bluetooth headset.
+
+Hardware abstraction layer::
+  Although the Linux kernel does provide a good abstraction layer for many
+  drivers, in some cases this layer is too complex or does not exist for
+  certain types of devices.  To resolve this problem, Android has an
+  additional abstraction layer.
+  
+
+.Is Android Linux?
+********************************************************************************
+Android makes use of the Linux kernel and many of the same system libraries
+found on Linux distributions such as Debian, Fedora, Gentoo, or Ubuntu.
+Nonetheless, there are some key differences that keep Android from fully being
+a true 'Linux'.
+
+For example, most Linux distributions use the fully-featured GNU C library and
+a suite of standard utilities.  Embedded Linux distributions often use the
+smaller uClibc C library and BusyBox as a lean replacement for many of the
+standard utilities.  However, Android uses its own Bionic C library and
+Toolbox utility suite, neither of which support all of the features necessary
+for a general-purpose Linux system.
+********************************************************************************
+
+==== Android runtime
+
+The Android runtime is the component that has the greatest impact on Android
+application development.  It consists of two parts: the
+Dalvik{empty}footnote:[Dalvik is named after the fishing village of Dalv√≠k in
+Eyjafj√∂r√µur, Iceland] Virtual Machine (VM) and a set of core libraries.  Your
+application will run in an instance of the runtime and you must compile your
+code to a format that is compatible with the Dalvik VM.
+
+.What is a virtual machine?
+********************************************************************************
+Most programming languages that are compiled into a machine-readable form are
+compiled into a form that is specific to a particular type of platform.  This
+provides very good performance but also means that it cannot run on different
+platforms without being recompiled.
+
+A virtual machine (VM) provides a high-level abstraction of the underlying
+hardware.  As a result, a program compiled for a given virtual machine can be
+platform-independent.  To support a new platform, only a new virtual machine
+implementation needs to created for that platform.
+
+Java promised to be ‚Äòwrite once, run anywhere‚Äô based on the fact that Java
+programs are compiled for the Java VM, which has been implemented for a wide
+range of computers.  Other languages also use a virtual machine.  For example,
+in Microsoft's .NET framework, languages such as C# and VB.NET compile into
+Common Intermediate Language, which is executed by a virtual machine.
+********************************************************************************
+
+===== The Dalvik VM
+
+Android uses a virtual machine so an application may be written and compiled
+once and still run on every Android device, regardless of the underlying
+hardware.  Google decided to create its own virtual machine, the Dalvik VM, as
+a clean-room implementation of the Java VM (JVM) optimised for embedded
+devices.  It is designed to run in multiple processes, minimise memory use,
+and be highly-optimised for the CPU.
+
+To achieve these goals, the Dalvik VM differs from the JVM in one particularly
+important aspect: Instead of using Java's standard compiled format, it uses
+its own format, the Dalvik Executable (DEX).  The path from a source file to a
+DEX file is outlined in <<fig.dx_process>>.
+
+The Java compiler transforms source code into a number of class files, each
+one of which represents an individual class.  These class files are made up of
+JVM bytecodes which the JVM interprets into a format executable by the native
+hardware.  Java applications and libraries generally consist of many class
+files and are usually packaged into Java Archive (JAR) files.
+
+Android provides a tool that takes individual class files and JAR files and
+converts these into a DEX file.  This process consists largely of two parts:
+finding and consolidating shared structures between the different class files
+and converting the Java byte codes into Dalvik byte codes.  The result is a
+single file that can be run by the Dalvik VM and is usually much smaller than
+the original.
+
+
+[[fig.dx_process]]
+.From source to DEX file
+image::dx_process.svg[scaledwidth="80%",align="center"]
+
+
+===== The core libraries
+
+The second part of the Android runtime are the core libraries, which provide
+most of the libraries from the standard edition of the Java programming
+language.
+
+[NOTE]
+If you are already familiar with the APIs from Java SE, Android's core libraries
+will be very familiar to you.  However, be aware that there are some APIs in
+Java that are not available in Android, and others which may behave
+differently in Android.  Always check the Android API reference to be sure
+that Android supports what you would like to do.
