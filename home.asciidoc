@@ -24,3 +24,6 @@ include:ch1.txt[]
 ==== Application framework
 
 ==== Applications
+
+[[ch2]]
+== Android Applications
