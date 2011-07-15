@@ -1,6 +1,10 @@
 = Decaffeinated Android
 Daniel Solano Gómez
+:doctype: book
+:docinfo:
+:imagesdir: images/
 
+== Introducing Android
 
 * [[Frontmatter | frontmatter]]
 
