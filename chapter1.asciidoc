@@ -9,7 +9,7 @@ some of the limitations you will face.
 If you are eager to get started, feel free to skim over this chapter and move
 on to <<android_apps, the next chapter>>.
 
-[NOTE] from the editor
+[NOTE]
 I'd like the history stuff to be a lot more condensed and maybe even a couple of paragraphs.  
 If we do not get people working with code or something early, we will lose them for the whole
 book, I think.
