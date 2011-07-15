@@ -1,5 +1,6 @@
 = Decaffeinated Android
 Daniel Solano Gómez
+:doctype: book
 
 == Introducing Android
 
