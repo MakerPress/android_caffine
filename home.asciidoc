@@ -3,7 +3,7 @@ Daniel Solano Gómez
 
 == Introducing Android
 
-include::chapter1
+[[chapter1]]
 
 * [[Frontmatter | frontmatter]]
 
