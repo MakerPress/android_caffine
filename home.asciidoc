@@ -9,6 +9,11 @@ include:ch1.txt[]
 
 === What is Android?
 
+
+////
+This is a comment.
+////
+
 === Anatomy of an Android
 
 ==== The Linux Kernel
