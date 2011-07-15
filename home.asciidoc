@@ -3,6 +3,6 @@ Daniel Solano Gómez
 
 == Introducing Android
 
-[[chapter1]]
+[[ch1-intro]]
 
 === What is Android?
