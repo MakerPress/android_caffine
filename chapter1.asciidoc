@@ -24,9 +24,9 @@ Blackberry.  The developer documentation defines Android as `a software stack
 for mobile devices that includes an operating system, middleware and key
 applications (see [http://developer.android.com/guide/basics/what-is-android.html]).
 In the next section, you will learn in greater detail what this means.
-****
 
-.A brief history of Android
+
+====A brief history of Android
 ****
 Android was created by Andy Rubin and started out as Android, Inc. in 2003.
 Google acquired the company in 2005 and made Rubin its Senior Vice President
