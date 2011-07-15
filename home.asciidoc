@@ -5,12 +5,4 @@ Daniel Solano Gómez
 
 [[chapter1]]
 
-* [[Frontmatter | frontmatter]]
-
-* [[Introduction / Foreword | introduction]]
-
-* [[Chapter 1 | chapter1]]
-
-* [[Chapter 2 | chapter2]]
-
-* [[Colophon | colophon]]
+=== What is Android?
