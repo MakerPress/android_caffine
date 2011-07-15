@@ -1,0 +1,8 @@
+In order to write applications for Android, it helps to understand more about
+the platform as a whole.  It is not necessary to know intimately the details
+of the Android platform, being familiar with the platform will help you
+understand many of the features you can use in your application, as well as
+some of the limitations you will face.
+
+If you are eager to get started, feel free to skim over this chapter and move
+on to <<android_apps, the next chapter>>.
