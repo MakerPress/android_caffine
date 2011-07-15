@@ -24,7 +24,7 @@ Blackberry.  The developer documentation defines Android as `a software stack
 for mobile devices that includes an operating system, middleware and key
 applications (see [http://developer.android.com/guide/basics/what-is-android.html]).
 In the next section, you will learn in greater detail what this means.
-
+****
 
 .A brief history of Android
 ****
