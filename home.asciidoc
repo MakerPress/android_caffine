@@ -6,3 +6,19 @@ Daniel Solano Gómez
 [[ch1-intro]]
 
 === What is Android?
+
+=== Anatomy of an Android
+
+==== The Linux Kernel
+
+==== System libraries
+
+==== Android runtime
+
+===== The Dalvik VM
+
+===== The core libraries
+
+==== Application framework
+
+==== Applications
