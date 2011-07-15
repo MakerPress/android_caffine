@@ -5,6 +5,7 @@ Daniel Solano Gómez
 == Introducing Android
 
 [[ch1-intro]]
+include:ch1.txt[]
 
 === What is Android?
 
