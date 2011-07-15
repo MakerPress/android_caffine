@@ -10,7 +10,7 @@ If you are eager to get started, feel free to skim over this chapter and move
 on to <<android_apps, the next chapter>>.
 
 [NOTE]
-*Editor syas*:  I'd like the history stuff to be a lot more condensed and maybe even a couple of paragraphs.  
+*Editor says*:  I'd like the history stuff to be a lot more condensed and maybe even a couple of paragraphs.  
 If we do not get people working with code or something early, we will lose them for the whole
 book, I think.  Maybe we should describe the type of app we are going to build, and what layers
 and components will be used.  Maybe that is a better way to introduce the stack.
