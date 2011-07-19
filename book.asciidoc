@@ -5,15 +5,15 @@ Daniel Solano Gómez
 
 = Getting started with Android development
 
-[[core/part.asciidoc]]
+[[core/part]]
 
 = Android development in Scala
 
-[[scala/part.asciidoc]]
+[[scala/part]]
 
 
 = Android development in Clojure
 
-[[clojure/part.asciidoc]]
+[[clojure/part]]
 
 // vim: set spell syntax=asciidoc:
