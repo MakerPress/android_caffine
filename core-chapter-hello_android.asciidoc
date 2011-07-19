@@ -6,7 +6,6 @@ book, you'll get not just one, but several variations of the program, each in
 a different language.  If you run the program, you should see something
 similar to what is in <<fig-core-hello_android-capture_of_hello_android>>.
 
-
 [[fig-core-hello_android-capture_of_hello_android]]
 .“Hello, Android!”, as seen on typical phone
 
