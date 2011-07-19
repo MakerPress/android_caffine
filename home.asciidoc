@@ -2,33 +2,15 @@
 Daniel Solano Gómez
 :doctype: book
 
-== Introducing Android
+= Getting started with Android development
 
-[[ch1-intro]]
-include:ch1.txt[]
+[[part-core]]
 
-=== What is Android?
+= Android development in Scala
+
+[[part-scala]]
 
 
-////
-This is a comment.
-////
+= Android development in Clojure
 
-=== Anatomy of an Android
-
-==== The Linux Kernel
-
-==== System libraries
-
-==== Android runtime
-
-===== The Dalvik VM
-
-===== The core libraries
-
-==== Application framework
-
-==== Applications
-
-[[ch2]]
-== Android Applications
+[[part-clojure]]
