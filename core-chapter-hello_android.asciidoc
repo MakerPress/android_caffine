@@ -18,8 +18,6 @@ implementation in <<listing-core-hello_android-hello_android_scala>> is
 quite similar.  On the other hand, Clojure has a radically different syntax,
 as seen in <<listing-core-hello_android-hello_android_clojure>>.
 
-[[listing-core-hello_android-hello_android_java]]
-
 .“Hello, Android!” in Java
 [source,java]
 ----
