@@ -1,16 +1,19 @@
 = Decaffeinated Android
 Daniel Solano Gómez
 :doctype: book
+:docinfo:
 
 = Getting started with Android development
 
-[[part-core]]
+include::part-core.asciidoc[]
 
 = Android development in Scala
 
-[[part-scala]]
+include::part-scala.asciidoc[]
 
 
 = Android development in Clojure
 
-[[part-clojure]]
+include::part-clojure.asciidoc[]
+
+// vim: set spell syntax=asciidoc:
