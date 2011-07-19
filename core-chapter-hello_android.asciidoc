@@ -1,0 +1,154 @@
+=== Hello, Android!
+
+It is the tradition of any instructive text in programming to include a
+minimal program that displays a variation of the text “hello, world.”  In this
+book, you'll get not just one, but several variations of the program, each in
+a different language.  If you run the program, you should see something
+similar to what is in <<fig-core-hello_android-capture_of_hello_android>>.
+
+
+[[fig-core-hello_android-capture_of_hello_android]]
+.“Hello, Android!”, as seen on typical phone
+image::images/core/hello_android/capture.png[]
+
+
+For the sake of comparison, <<listing-core-hello_android-hello_android_java>>
+shows a version of the program in Java.  In comparison, the Scala
+implementation in <<listing-core-hello_android-hello_android_scala>> is
+quite similar.  On the other hand, Clojure has a radically different syntax,
+as seen in <<listing-core-hello_android-hello_android_clojure>>.
+
+[[listing-core-hello_android-hello_android_java]]
+[source,java]
+.“Hello, Android!” in Java
+----
+include::code/core/hello-android/HelloActivity.java[]
+----
+
+[[listing-core-hello_android-hello_android_scala]]
+[source,scala]
+.“Hello, Android!” in Scala
+----
+include::code/core/hello-android/HelloActivity.scala[]
+----
+
+[[listing-core-hello_android-hello_android_clojure]]
+[source,lisp]
+.“Hello, Android!”  in Clojure
+----
+include::code/core/hello-android/HelloActivity.clj[]
+----
+
+
+=== What are little apps made of?
+
+Android applications are more than just code; they can contain any number of
+other things, such as images, audio, web pages, etc.  In general, these are
+organized into the following:
+
+Assets::
+  Assets are simply files that are stored within your application.  You can
+  access them from within your application in a fashion similar to accessing
+  files on a filesystem.  Generally, you will store files such as audio files,
+  video files, or HTML documents as assets.
+
+// TODO: add reference to chapter that covers assets
+
+Resources::
+  Resources include things such as images, animations, and strings.  The idea
+  behind resources is to manage them independently from the code, allowing you
+  to easily customize your application depending on things such as the user's
+  preferred language, the size of the screen, and the version of the Android
+  platform.
+  
+// TODO: add reference to chapter that covers resources
+
+`AndroidManifest.xml`::
+  Android requires all applications to have an `AndroidManifest.xml` file.
+  This file allows you to tell Android important things about your
+  application, such as how to start your application, what icons and labels to
+  show the user for your application, and what permissions your application
+  requires.  We'll talk about the manifest later in this chapter in
+  <<sec-core-hello_android-manifest>>.
+  
+
+
+[[fig-core-hello_android-basic_project_layout]]
+.Sample layout of an Android project
+----
+my_android_project/
+  AndroidManifest.xml
+  assets/
+    kitten_video.mpg
+    my_song.mp3
+  res/
+    drawable/
+      icon.png
+    values/
+      strings.xml
+  src/
+    <source files go here>
+----
+
+=== “Hello, Android!” in depth
+
+Let's revisit our “Hello, Android!” program.  We'll use the Scala implementation in
+<<fig-core-hello_android-scala_annotated>> as we review what's going on in
+some depth.
+
+[[fig-core-hello_android-scala_annotated]]
+[source,scala]
+.“Hello, Android!” in Scala, revisited
+----
+include::code/core/hello-android/HelloAnnotatedActivity.scala[]
+----
+<1> Declare the package for the class.
+<2> Create a subclass of `android.app.Activity`
+<3> Implement the `onCreate` life cycle method.
+<4> Set the content of of the activity,
+<5> As a text box,
+<6> With the text “Hello, Android!”
+
+==== Packaging “Hello, Android!”
+
+The first line declares that the class being defined belongs in a particular
+'package', in this case `com.decaffeinatedandroid.scala.hello_android`.  If
+you're unfamiliar with Java, a package is analogous to what in other languages
+may be called namespaces or modules.  You should use packages to organize code
+into logical units.  Packages also help differentiate two classes that may
+have the same name, e.g. `package1.MyClass` is different from
+`package2.MyClass`.
+
+However, in Android, packages serve in additional purpose: they also serve to
+uniquely identify your application.  Every Android application is associated
+with a package.  For example, the Google's GMail application has the package
+`com.google.android.gm`, and no other application can use that same package
+name.
+
+To reduce the probability that two people will try to use the same package
+name, the first two parts of the package are derived from a domain name.
+Google owns 'google.com', so their applications start with `com.google`.
+Twitter, owner of 'twitter.com', has its application associated with the
+package `com.twitter.android`.  When creating your own applications, you
+should follow a similar model.
+
+==== Extending `Activity`
+
+.
+
+==== Implementing the life cycle method
+
+.
+
+==== Setting the content
+
+.
+
+'''
+
+And that what make “Hello, Android!” tick.
+
+[[sec-core-hello_android-manifest]]
+=== What's with `AndroidManifest.xml`
+
+.
