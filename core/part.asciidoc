@@ -1,0 +1,24 @@
+[[core-chapter-introducing_android]]
+== Introducing Android
+
+include::chap-introducing_android.txt[]
+
+
+[[core-chapter-hello_android]]
+== Hello, Android!
+
+include::chap-hello_android.txt[]
+
+
+[[core-chapter-activities]]
+== Activities & Views
+
+include::chap-activities.txt[]
+
+
+[[chapter-resources]]
+== Assets & Resources
+
+.
+
+// vim: set spell syntax=asciidoc:
