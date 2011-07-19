@@ -1,6 +1,0 @@
-= Decaffeinated Android
-Daniel Solano_Gómez
-
-== Introducing Android
-
-[[ch1-intro]]
