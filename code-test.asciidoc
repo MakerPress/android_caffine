@@ -1,3 +1,9 @@
+Adding the code by reference stuffs it in an `<img>` tag, but +++<a
+href="code/core/hello-android/HelloActivity.scala">linking to the code manually
+works</a>+++:
+
+[[code/core/hello-android/HelloActivity.scala]]
+
 The following works:
 
 ```clojure
