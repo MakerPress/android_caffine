@@ -25,6 +25,7 @@ foo {
 }
 ----
 
+////
 .“Hello, Android!” in Scala
 [[listing-core-hello_android-hello_android_scala]]
 [source,scala]
@@ -38,6 +39,7 @@ include:code/core/hello-android/HelloActivity.scala[]
 ----
 include:code/core/hello-android/HelloActivity.clj[]
 ----
+////
 
 
 === What are little apps made of?
