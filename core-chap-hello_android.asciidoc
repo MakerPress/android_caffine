@@ -21,7 +21,8 @@ as seen in <<listing-core-hello_android-hello_android_clojure>>.
 .“Hello, Android!” in Java
 [source,java]
 ----
-[[code/core/hello-android/HelloActivity.java]]
+foo {
+}
 ----
 
 .“Hello, Android!” in Scala
