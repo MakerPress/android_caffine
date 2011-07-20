@@ -7,9 +7,9 @@ a different language.  If you run the program, you should see something
 similar to what is in <<fig-core-hello_android-capture_of_hello_android>>.
 
 
-[[fig-core-hello_android-capture_of_hello_android]]
 .“Hello, Android!”, as seen on typical phone
-image::image/core/hello-android/capture.png[]
+[[fig-core-hello_android-capture_of_hello_android]]
+image::image/core/hello-android/capture.png[scaledwidth="25%",align="center"]
 
 
 For the sake of comparison, <<listing-core-hello_android-hello_android_java>>
