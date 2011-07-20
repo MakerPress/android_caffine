@@ -1,0 +1,13 @@
+The following works:
+
+image:image/core/hello-android/capture.png[]
+
+
+The following does not:
+
+image:images/core/hello-android/capture.png[]
+
+
+Also, the AsciiDoc double-colon block syntax does not work:
+
+image::image/core/hello-android/capture.png[]
