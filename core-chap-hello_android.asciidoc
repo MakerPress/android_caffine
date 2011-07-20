@@ -20,7 +20,7 @@ as seen in <<listing-core-hello_android-hello_android_clojure>>.
 
 .“Hello, Android!” in Java
 anchor:code/core/hello-android/HelloActivity.java[]
-[[listing-core-hello_android-hello_android_scala]]
+[[code/core/hello-android/HelloActivity.scala]]
 
 ////
 .“Hello, Android!” in Scala
