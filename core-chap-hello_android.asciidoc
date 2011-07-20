@@ -19,10 +19,9 @@ quite similar.  On the other hand, Clojure has a radically different syntax,
 as seen in <<listing-core-hello_android-hello_android_clojure>>.
 
 .“Hello, Android!” in Java
-[[listing-core-hello_android-hello_android_java]]
 [source,java]
 ----
-[[code/core/hello-android/HelloActivity.java]]
+include:code/core/hello-android/HelloActivity.java[]
 ----
 
 .“Hello, Android!” in Scala
