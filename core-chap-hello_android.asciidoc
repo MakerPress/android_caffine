@@ -8,9 +8,7 @@ similar to what is in <<fig-core-hello_android-capture_of_hello_android>>.
 
 
 .“Hello, Android!”, as seen on typical phone
-
 anchor:fig-core-hello_android-capture_of_hello_android[]
-
 image:image/core/hello-android/capture.png[]
 
 
