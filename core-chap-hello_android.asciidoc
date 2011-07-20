@@ -74,8 +74,8 @@ Resources::
   
 
 
-[[fig-core-hello_android-basic_project_layout]]
 .Sample layout of an Android project
+[[fig-core-hello_android-basic_project_layout]]
 ----
 my_android_project/
   AndroidManifest.xml
