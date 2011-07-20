@@ -22,21 +22,21 @@ as seen in <<listing-core-hello_android-hello_android_clojure>>.
 [[listing-core-hello_android-hello_android_java]]
 [source,java]
 ----
-include::code/core/hello-android/HelloActivity.java[]
+include:code/core/hello-android/HelloActivity.java[]
 ----
 
 .“Hello, Android!” in Scala
 [[listing-core-hello_android-hello_android_scala]]
 [source,scala]
 ----
-include::code/core/hello-android/HelloActivity.scala[]
+include:code/core/hello-android/HelloActivity.scala[]
 ----
 
 .“Hello, Android!”  in Clojure
 [[listing-core-hello_android-hello_android_clojure]]
 [source,lisp]
 ----
-include::code/core/hello-android/HelloActivity.clj[]
+include:code/core/hello-android/HelloActivity.clj[]
 ----
 
 
