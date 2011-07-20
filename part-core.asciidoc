@@ -1,16 +1,24 @@
+anchor:core-chapter-introducing_android[]
 == Introducing Android
 
 [[core-chap-introducing_android]]
 
+
+anchor:core-chapter-hello_android[]
 == Hello, Android!
 
-[[core-chapter-hello_android]]
+[[core-chap-hello_android]]
 
 
+anchor:core-chapter-activities[]
 == Activities & Views
 
-[[core-chapter-activities]]
+[[core-chap-activities]]
 
+
+anchor:chapter-resources[]
 == Assets & Resources
 
-[[chapter-resources]]
+.
+
+
