@@ -1,0 +1,5 @@
+
+The first type of Android component you will create is an _Activity_.  An
+activity generally represents a single activity that a user 
+
+// vim: set spell:

@@ -1,0 +1,9 @@
+[partintro]
+--
+This part will walk the user through developing the example application in
+Clojure.
+--
+
+== Android and Clojure
+
+Some text.

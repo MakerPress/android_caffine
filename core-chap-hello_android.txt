@@ -73,8 +73,8 @@ Resources::
   
 
 
-[[fig-core-hello_android-basic_project_layout]]
 .Sample layout of an Android project
+[[fig-core-hello_android-basic_project_layout]]
 ----
 my_android_project/
   AndroidManifest.xml
@@ -93,10 +93,10 @@ my_android_project/
 === “Hello, Android!” in depth
 
 Let's revisit our “Hello, Android!” program.  We'll use the Scala implementation in
-<<fig-core-hello_android-scala_annotated>> as we review what's going on in
+<<listing-core-hello_android-scala_annotated>> as we review what's going on in
 some depth.
 
-[[fig-core-hello_android-scala_annotated]]
+[[listing-core-hello_android-scala_annotated]]
 [source,scala]
 .“Hello, Android!” in Scala, revisited
 ----

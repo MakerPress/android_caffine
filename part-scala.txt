@@ -1,0 +1,9 @@
+[partintro]
+--
+This part will walk the user through developing the example application in
+Scala.
+--
+
+== Android and Scala
+
+Some text.
