@@ -1,0 +1,15 @@
+The following works:
+
+```clojure
+(println "Hello, world!")
+```
+
+The following does not:
+
+[source,clojure]
+----
+(println "Hello, world!")
+----
+
+
+This doesn't even render.
