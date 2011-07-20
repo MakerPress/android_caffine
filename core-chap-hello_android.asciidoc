@@ -9,7 +9,7 @@ similar to what is in <<fig-core-hello_android-capture_of_hello_android>>.
 
 [[fig-core-hello_android-capture_of_hello_android]]
 .“Hello, Android!”, as seen on typical phone
-image::images/core/hello_android/capture.png[]
+image:images/core/hello_android/capture.png[]
 
 
 For the sake of comparison, <<listing-core-hello_android-hello_android_java>>
